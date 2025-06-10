@@ -3,38 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calculadora Top</title>
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Calculadora Top</h1>
-  
-  <p>
-    <input type="text" id="display" readonly><br><br>
+  <h1>Sport clube Internacional</h1>
 
-    <input type="button" value="1" id="um">
-    <input type="button" value="2" id="dois">
-    <input type="button" value="3" id="tres"><br>
+  <div class="calculadora">
+    <input type="text" id="display" readonly>
 
-    <input type="button" value="4" id="quatro">
-    <input type="button" value="5" id="cinco">
-    <input type="button" value="6" id="seis"><br>
+    <div class="botoes">
+      <button id="abre">(</button>
+      <button id="fecha">)</button>
+      <button id="apagar">⌫</button>
+      <button id="dividir">÷</button>
 
-    <input type="button" value="7" id="sete">
-    <input type="button" value="8" id="oito">
-    <input type="button" value="9" id="nove"><br>
+      <button id="sete">7</button>
+      <button id="oito">8</button>
+      <button id="nove">9</button>
+      <button id="multiplicar">x</button>
 
-    <input type="button" value="0" id="zero">
-    <input type="button" value="+" id="mais">
-    <input type="button" value="-" id="menos"><br>
+      <button id="quatro">4</button>
+      <button id="cinco">5</button>
+      <button id="seis">6</button>
+      <button id="menos">-</button>
 
-    <input type="button" value="x" id="multiplicar">
-    <input type="button" value="÷" id="dividir">
-    <input type="button" value="⌫" id="apagar"><br><br>
+      <button id="um">1</button>
+      <button id="dois">2</button>
+      <button id="tres">3</button>
+      <button id="mais">+</button>
 
-    <input type="button" value="=" id="igual">
-  </p>
+      <button id="zero" class="zero">0</button>
+      <button id="igual" class="igual">=</button>
+    </div>
 
-  <h1 id="resposta">Resposta: </h1>
+    <h2 id="resposta">Resultado: </h2>
+  </div>
 
   <script src="js1.js"></script>
 </body>
