@@ -35,6 +35,16 @@ document.getElementById("dividir").addEventListener("click", () => {
   display.value = expressao;
 });
 
+document.getElementById("abre").addEventListener("click", () => {
+  expressao += "(";
+  display.value = expressao;
+});
+
+document.getElementById("fecha").addEventListener("click", () => {
+  expressao += ")";
+  display.value = expressao;
+});
+
 document.getElementById("igual").addEventListener("click", () => {
   try {
     const resultado = eval(expressao);
@@ -48,3 +58,4 @@ document.getElementById("apagar").addEventListener("click", () => {
   expressao = expressao.slice(0, -1);
   display.value = expressao;
 });
+
